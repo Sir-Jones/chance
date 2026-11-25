@@ -6,15 +6,15 @@
   <title>Jobangebot – Jörg Nissen</title>
   <style>
     :root {
-      --bg: #111317;
-      --surface: #1a1d24;
-      --surface-soft: #222630;
-      --text: #f3f4f6;
-      --muted: #b8beca;
-      --accent: #e5a93c;
-      --accent-hover: #f0b952;
-      --accent-text: #111317;
-      --border: #2e3442;
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-soft: #f7f8fa;
+      --text: #181a1f;
+      --muted: #4b5260;
+      --accent: #181a1f;
+      --accent-hover: #2f343e;
+      --accent-text: #ffffff;
+      --border: #e5e7eb;
     }
 
     * {
@@ -30,47 +30,13 @@
     }
 
     a {
-      color: var(--accent);
+      color: var(--text);
     }
 
     .container {
       max-width: 860px;
       margin: 0 auto;
-      padding: 2rem 1.25rem 4rem;
-    }
-
-    .topbar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      padding-bottom: 1.5rem;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .brand {
-      font-weight: 700;
-      font-size: 1.1rem;
-      text-decoration: none;
-      color: var(--text);
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.25rem;
-      font-size: 0.95rem;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: var(--muted);
-    }
-
-    .nav a:hover {
-      color: var(--text);
+      padding: 2.5rem 1.25rem 4rem;
     }
 
     .card {
@@ -143,31 +109,15 @@
     }
 
     .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      align-items: center;
       margin-top: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--accent-text);
-      font-weight: 700;
-      text-decoration: none;
-      padding: 0.9rem 1.5rem;
-      border-radius: 10px;
-    }
-
-    .btn:hover {
-      background: var(--accent-hover);
     }
 
     .btn-secondary {
       display: inline-block;
       border: 1px solid var(--border);
+      background: var(--surface-soft);
       color: var(--text);
+      font-weight: 600;
       text-decoration: none;
       padding: 0.85rem 1.35rem;
       border-radius: 10px;
@@ -188,6 +138,15 @@
       font-size: 0.95rem;
     }
 
+    footer a {
+      text-decoration: none;
+      color: var(--muted);
+    }
+
+    footer a:hover {
+      color: var(--text);
+    }
+
     @media (max-width: 600px) {
       .content {
         padding: 1.5rem 1.15rem;
@@ -197,16 +156,6 @@
 </head>
 <body>
   <div class="container">
-    <header class="topbar">
-      <a class="brand" href="https://joerg-nissen.com/">Jörg Nissen</a>
-      <nav class="nav">
-        <a href="https://joerg-nissen.com/">Startseite</a>
-        <a href="https://joerg-nissen.com/kontakt/">Kontakt</a>
-        <a href="https://joerg-nissen.com/impressum/">Impressum</a>
-        <a href="https://joerg-nissen.com/cookie-richtlinie-eu/">Cookie-Richtlinie</a>
-      </nav>
-    </header>
-
     <main class="card">
       <img
         class="hero-img"
@@ -253,13 +202,12 @@
         </div>
 
         <div class="cta-row">
-          <a class="btn" href="https://calendar.app.google/sRydYhhpKdz9myZr5">Hier Termin vereinbaren!</a>
           <a class="btn-secondary" href="https://joerg-nissen.com/kontakt/">Direkt zum Kontakt</a>
         </div>
 
         <footer>
-          <a href="https://joerg-nissen.com/kontakt">Kontakt</a>
-          <a href="https://ww1.lifeplus.com/SHUBJ5"><strong>Shop</strong> – Biohacking</a>
+          <a href="https://joerg-nissen.com/kontakt/">Kontakt</a>
+          <a href="https://joerg-nissen.com/impressum/">Impressum</a>
         </footer>
       </div>
     </main>
